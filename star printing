@@ -1,0 +1,13 @@
+blocks = int(input("Enter number of blocks: "))
+lines = int(input("Enter number of lines per block: "))
+stars = int(input("Enter number of stars per line: "))
+
+for i in range(blocks):
+    c = 0  # Counter for number of stars in the block
+    for j in range(lines):
+        for k in range(stars):
+            print("*", end=" ")
+            c += 1
+        print()
+    print(f"Stars printed in block {i+1}: {c}")
+    print("---------------------")
